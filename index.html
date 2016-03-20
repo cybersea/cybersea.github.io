@@ -1,115 +1,135 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<title>MAP672 Portfolio Example</title>
 
-<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> 
-    
-<style>
-    body {  
-        background: #f5f5f5;   
-        font-family: Imprima, sans-serif;
-    }
-     header { 
-        width: 100%;
-        min-width: 800px;
-        margin: 0 auto;
-        background: steelblue;
-        padding: 15px 0 20px;
+<head>
+    <meta charset="utf-8">
+    <title>Allison Bailey Portfolio</title>
+
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <style>
+        body {
+            background: #f5f5f5;
+            font-family: Lato, sans-serif;
         }
-    h1 { 
-        font-family: Dosis, sans-serif;
-        color: #375671; 
-        width: 80%;
-        margin: 0 auto;
-        color: whitesmoke;
-    }
-    h2 { 
-        font-family: Dosis, sans-serif;
-        color: #375671;
-        width: 80%;
-        margin: 0 auto;
-        color: whitesmoke;
-    }
-    h3 {
-        font-family: Dosis, sans-serif;
-        color: #003d71
-    }
-    p { 
-        font-size: .9em; 
-        color: #375671; 
-    }
-    ul {
-        list-style-type: none; 
-        font-size: .9em; 
-        color: #375671; 
-        line-height: 1.6em;
-    }
-    a, a:visited {   
-        color: #003d71;
-    }
-    .project {
-        width: 80%;
-        min-width: 800px;
-        height: 100%;
-        margin: 35px auto;
-    }
-    .project:after{
-        content: "";
-        display: table;
-        clear: both; 
-    }
-    .project-image {
-        width: 388px;
-        height: 240px;
-        background: white;
-        float: left;
-        margin-right: 20px;
-        border: 2px solid #dddddd;
-    }
-</style>
+        
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background:   #994d00;
+            padding: 15px 0 20px;
+        }
+        
+        h1 {
+            font-family: Roboto, sans-serif;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h2 {
+            font-family: Roboto, sans-serif;
+/*            color: #375671;*/
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+        }
+        
+        h3 {
+            font-family: Roboto, sans-serif;
+            color: #663300
+        }
+        
+        p {
+            font-size: .9em;
+            color: #4d2600
+        }
+        
+        ul {
+            list-style-type: none;
+            font-size: .9em;
+            line-height: 1.6em;
+        }
+        
+        a {
+            color: #663300;
+        }
+
+/*
+        a:visited {
+            color: #e67300;
+        }
+*/
+       
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            border: 2px solid #dddddd;
+        }
+    </style>
 </head>
 
 <body>
-<header>
-    <h1>MAP672: Programming for Web Mapping</h1>
-    <h2>Web Cartography at the University of Kentucky</h2>
-</header>
-<section class="project">
-    <a href="maps/bathy_fish_svy_fullres.png" target="_blank"><img src="images/bathy_fish_svy.png" alt="map of bathymetry contours and fish survey locations" height="384" width="621" class="project-image"/></a>
-    <h3><a target = '_blank' href="maps/bathy_fish_svy_fullres.png"> Swan Lake Bathymetry and Fish Survey</a></h3>
-    <p>The source data were collected from a small boat using a Biosonics single-beam echosounder.</p>
-    <p>The bathymetry data points were converted into a bathymetry surface model and depth contour lines were generated from this surface model. Fish were also detected using the echosounder and their surveyed locations are shown on the map.  </p>
-    <ul>
-        <li>Full resolution map: <a href="maps/bathy_fish_svy_fullres.png" target="_blank"> Swan Lake Bathy and Fish Survey</a></li>
-        <li>Learn more about <a href="http://www.biosonicsinc.com" target="_blank"> Biosonics</a></li>
-    </ul>
-</section>
-   
-<section class="project">
-   <a target = '_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map"><img src="images/uninsuredUS.png" alt="uninsured americans by county" class="project-image"/></a>
-    <h3><a target = '_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map">Uninsured Americans in 2015 by US County</a></h3>
-    <p>This map was created using a sample lesson for New Maps Plus, Map 671 course on integrating QGIS with CartoDB. </p>
-    <p>The lesson involved reformatting, converting and joining some tabular data with a shapefile of US Counties in QGIS.  These data were uploaded and styled into a chloropleth map in CartoDB.</p>
-    <ul>
-        <li>Interactive Map: <a href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map" target="_blank"> Uninsured Americans in 2015 by US County</a></li>
-        <li>Data Source: <a target = '_blank'  href="http://www.countyhealthrankings.org/">County Health Rankings &amp; Roadmaps</a></li>
-        <li>Make your own map with QGIS and CartoDB: <a href="http://newmapsplus.uky.edu/map671-module-08-integrating-qgis-cartodb" target="_blank"> New Maps Plus Map 671 Module 08</a></li>
+    <header>
+        <h1>Allison Bailey</h1>
+        <h2>Web Mapping Portfolio for University of Kentucky New Maps Plus</h2>
+    </header>
 
-<section class="project">
-   <a target = '_blank' href="#"><img src="images/hello-kitty.png" alt="Hello Kitty Proportional Symbol Map" class="project-image"/></a>
-    <h3><a target = '_blank' href="#">Hello Kitty Proportional Symbol Map</a></h3>
-    <p>This map was built with custom JavaScript code drawing upon the Leaflet JavaScript Library, bla bla bla</p>
-    <ul>
-        <li>See the map: <a target = '_blank'  href="#">Hello Kitty Proportional Symbol Map</a></li>
-        <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">County Health Rankings &amp; Roadmaps</a></li>
-    </ul>
-</section>
-    </ul>
-</section>
+    <section class="project">
+        <a href="maps/bathy_fish_svy_fullres.png" target="_blank"><img src="images/bathy_fish_svy.png" alt="map of bathymetry contours and fish survey locations" class="project-image" /></a>
+        <h3><a target = '_blank' href="maps/bathy_fish_svy_fullres.png"> Swan Lake Bathymetry and Fish Survey</a></h3>
+        <p>The source data were collected from a small boat using a Biosonics single-beam echosounder.</p>
+        <p>The bathymetry data points were converted into a bathymetry surface model and depth contour lines were generated from this surface model. Fish were also detected using the echosounder and their surveyed locations are shown on the map. </p>
+        <ul>
+            <li>Full resolution map: <a href="maps/bathy_fish_svy_fullres.png" target="_blank"> Swan Lake Bathy and Fish Survey</a></li>
+            <li>Learn more about <a href="http://www.biosonicsinc.com" target="_blank"> Biosonics</a></li>
+        </ul>
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map"><img src="images/uninsuredUS.png" alt="uninsured americans by county" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map">Uninsured Americans in 2015 by US County</a></h3>
+        <p>This map was created using a sample lesson for New Maps Plus, Map 671 course on integrating QGIS with CartoDB. </p>
+        <p>The lesson involved reformatting, converting and joining some tabular data with a shapefile of US Counties in QGIS. These data were uploaded and styled into a chloropleth map in CartoDB.</p>
+        <ul>
+            <li>Interactive Map: <a href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map" target="_blank"> Uninsured Americans in 2015 by US County</a></li>
+            <li>Data Source: <a target='_blank' href="http://www.countyhealthrankings.org/">County Health Rankings &amp; Roadmaps</a></li>
+            <li>Make your own map with QGIS and CartoDB: <a href="http://newmapsplus.uky.edu/map671-module-08-integrating-qgis-cartodb" target="_blank"> New Maps Plus Map 671 Module 08</a></li>
+        </ul>
+    </section>
+
+    <section class="project">
+        <a target='_blank' href="#"><img src="images/NuclearSolarWind_zoom.png" alt="Power Generation Proportional Symbol Map" class="project-image" /></a>
+        <h3><a target = '_blank' href="#">Power Generation Proportional Symbol Map</a></h3>
+        <p>This map was created with custom JavaScript code using the Leaflet JavaScript Library.  Power plant data were filtered and displayed with proportional symbols to contrast power generation capacity of three energy sources, Nuclear, Solar, and Wind.  </p>
+        <p>Users of the interactive map can click on an area to display only plants within 500 km of that location.  Popups display additional detail about the individual plants and summarize power generation capacity within the focus area. </p>
+        <ul>
+            <li>See the map: <a target='_blank' href="#">Power Generation Proportional Symbol Map</a></li>
+            <li>Data Source: <a target='_blank' href="https://www.eia.gov/electricity/data/detail-data.html">Department of Energy EIA Form 923</a></li>
+        </ul>
+    </section>
 </body>
+
 </html>
