@@ -93,29 +93,7 @@
         <h2>Web Mapping Portfolio for University of Kentucky New Maps Plus</h2>
     </header>
 
-    <section class="project">
-        <a href="maps/bathy_fish_svy_fullres.png" target="_blank"><img src="images/bathy_fish_svy_crop.png" alt="map of bathymetry contours and fish survey locations" class="project-image" /></a>
-        <h3><a target = '_blank' href="maps/bathy_fish_svy_fullres.png"> Swan Lake Bathymetry and Fish Survey</a></h3>
-        <p>The source data were collected from a small boat using a Biosonics single-beam echosounder.</p>
-        <p>The bathymetry data points were converted into a bathymetry surface model and depth contour lines were generated from this surface model. Fish were also detected using the echosounder and their surveyed locations are shown on the map. </p>
-        <ul>
-            <li>Full resolution map: <a href="maps/bathy_fish_svy_fullres.png" target="_blank"> Swan Lake Bathy and Fish Survey</a></li>
-            <li>Learn more about <a href="http://www.biosonicsinc.com" target="_blank"> Biosonics</a></li>
-        </ul>
-    </section>
-
-    <section class="project">
-        <a target='_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map"><img src="images/uninsuredUS.png" alt="uninsured americans by county" class="project-image" /></a>
-        <h3><a target = '_blank' href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map">Uninsured Americans in 2015 by US County</a></h3>
-        <p>This map was created using a sample lesson for New Maps Plus, Map 671 course on integrating QGIS with CartoDB. </p>
-        <p>The lesson involved reformatting, converting and joining some tabular data with a shapefile of US Counties in QGIS. These data were uploaded and styled into a chloropleth map in CartoDB.</p>
-        <ul>
-            <li>Interactive Map: <a href="https://cybersea.cartodb.com/viz/36c6de6a-b59a-11e5-8d28-0e674067d321/public_map" target="_blank"> Uninsured Americans in 2015 by US County</a></li>
-            <li>Data Source: <a target='_blank' href="http://www.countyhealthrankings.org/">County Health Rankings &amp; Roadmaps</a></li>
-            <li>Make your own map with QGIS and CartoDB: <a href="http://newmapsplus.uky.edu/map671-module-08-integrating-qgis-cartodb" target="_blank"> New Maps Plus Map 671 Module 08</a></li>
-        </ul>
-    </section>
-
+<!--
     <section class="project">
         <a target='_blank' href="http://cybersea.github.io/prop-symbol-power-map672/"><img src="images/NuclearSolarWind_zoom.png" alt="Power Generation Proportional Symbol Map" class="project-image" /></a>
         <h3><a target = '_blank' href="http://cybersea.github.io/prop-symbol-power-map672/">Power Generation Proportional Symbol Map</a></h3>
@@ -126,6 +104,34 @@
             <li>Data Source: <a target='_blank' href="https://www.eia.gov/electricity/data/detail-data.html">Department of Energy EIA Form 923</a></li>
         </ul>
     </section>
+-->
+    
+    <section class="project">
+        <a href="http://www.soundgis.com/efh/map673-trawl-intensity/" target="_blank"><img src="images/trawl_intensity.png" alt="Trawl Fishing Intensity Map, 2006-2010" class="project-image" /></a>
+        <h3><a target = '_blank' href="http://www.soundgis.com/efh/map673-trawl-intensity/">Trawl Fishing Intensity, 2006-2010</a></h3>
+        <p>This map was developed with <a href='http://leafletjs.com/' target='_blank'>Leaflet</a> using data hosted on <a href='https://cartodb.com/' target='_blank'>CartoDB</a> and customized with <a href='https://docs.cartodb.com/cartodb-platform/cartodb-js/' target='_blank'>CartoDB.js</a>.</p>
+        <p>It demonstrates that with only a few lines of code, one can easily create a web map using data that is hosted on CartoDB and customize the symbology using CartoDB.js.  CartoDB provides the the power of PostGIS and SQL queries for web mapping.  </p>
+        <p>The source data were developed by Curt Whitmire and Marlene Bellman of NOAA, National Marine Fisheries Service and provided through the <a href='http://efh-catalog.coas.oregonstate.edu/effort/' target='_blank'>Essential Fish Habitat Catalog</a> </p>
+    </section>
+    
+    <section class="project">
+        <a href="https://cybersea.github.io/map673-ky-unemployment/" target="_blank"><img src="images/ky_unemployment.png" alt="Kentucky Unemployment Rates Map, 2000-2013" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://cybersea.github.io/map673-ky-unemployment/">Kentucky Unemployment Rates, 2000-2013</a></h3>
+        <p>This map was developed with the <a href='http://leafletjs.com/' target='_blank'>Leaflet</a> , <a href='http://papaparse.com/' target="_blank">PapaParse</a>, and <a href='http://simplestatistics.org/' target="_blank">Simple Statistics</a> javascript libraries.</p>
+        <p>This project exposed us to a large variety of techniques that can be applied to most web mapping projects.  These techniques included: loading data asynchronously via AJAX, joining spatial GeoJSON data to an associated csv data file, drawing a choropleth map that is symbolized dynamically from the data values, providing visual affordances and interactivity with the data, and creating a time slider
+        </p>
+        <p>The source data were provided by Rich Donohue for the Maps 673 course.</p>
+    </section>
+    
+    <section class="project">
+        <a href="https://cybersea.github.io/efh2016-metrics/" target="_blank"><img src="images/efh_metrics.png" alt="Essential Fish Habitat Metrics Web App" class="project-image" /></a>
+        <h3><a target = '_blank' href="https://cybersea.github.io/efh2016-metrics/">West Coast Groundfish Essential Fish Habitat: Alternatives Analysis Metrics</a></h3>
+        <p>This mapping application was developed with the <a href='http://leafletjs.com/' target='_blank'>Leaflet</a> , <a href='https://jquery.com/' target="_blank">JQuery</a>, and <a href='http://turfjs.org/' target="_blank">Turf</a> javascript libraries.</p>
+        <p>Our final project was the culmination of the course and required all the JavaScript programming and HTML/CSS design skills we had developed, as well as many new ones.  My project required a higher level of  user interactivity and more UI and design components than we had previously encountered in the coursework.  Needless to say, it was challenge to put all the pieces together and present it in an understandable and useful way for the intended users. 
+        </p>
+        <p>For more information and background on the application, launch the <a target = '_blank' href="https://cybersea.github.io/efh2016-metrics/">EFH Metrics application</a> and click on the Info tab.</p>
+    </section>
+
 </body>
 
 </html>
